@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="create-a-cron-job-in-node.js">Create a Cron Job in Node.js</h1>
+<h3 id="step-1---add-node-cron-to-your-project">Step 1 - Add node-cron to your project</h3>
+<p>Go to your project and run the following command:</p>
+<pre class=" language-sh"><code class="prism  language-sh">npm install node-cron
+</code></pre>
+<h3 id="step-2---import-node-cron">Step 2 - Import node-cron</h3>
+<p>In the file you are running the task from, import node-cron:</p>
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token keyword">var</span> cron <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'node-cron'</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="step-3---usage">Step 3 - Usage</h3>
+<p>This step depends on how and when you want to run the task.<br><br>
+Read <a href="http://www.nncron.ru/help/EN/working/cron-format.htm">this page</a> to see how to format a cron string. (Ommit the 6th * as it is not used in this module)<br><br>
+<a href="https://crontab.guru/#*_*_*_*_*">This site</a> will help you format the cron string.</p>
+<h4 id="run-at-midnight-every-night">Run at Midnight Every Night</h4>
+<pre class=" language-javascript"><code class="prism  language-javascript">cron<span class="token punctuation">.</span><span class="token function">schedule</span><span class="token punctuation">(</span><span class="token string">'0 0 * * *'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">//Run logic to see if the record is to be deleted. If it is, delete it.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="run-every-hour">Run Every Hour</h4>
+<pre class=" language-javascript"><code class="prism  language-javascript">cron<span class="token punctuation">.</span><span class="token function">schedule</span><span class="token punctuation">(</span><span class="token string">'0 * * * *'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">//Run logic to see if the record is to be deleted. If it is, delete it.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="run-every-30-minutes">Run Every 30 Minutes</h4>
+<pre class=" language-javascript"><code class="prism  language-javascript">cron<span class="token punctuation">.</span><span class="token function">schedule</span><span class="token punctuation">(</span><span class="token string">'30 * * * *'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">//Run logic to see if the record is to be deleted. If it is, delete it.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="run-every-minute">Run Every Minute</h4>
+<pre class=" language-javascript"><code class="prism  language-javascript">cron<span class="token punctuation">.</span><span class="token function">schedule</span><span class="token punctuation">(</span><span class="token string">'* * * * *'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">//Run logic to see if the record is to be deleted. If it is, delete it.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Created by <a href="https://github.com/Camji55">Cameron Ingham</a></p>
+</div>
+</body>
+
+</html>
