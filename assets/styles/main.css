@@ -13,6 +13,16 @@
     src: url("../fonts/SF-Pro-Display-Semibold.otf");
 }
 
+@font-face {
+    font-family: "SF-Pro-Text-Light";
+    src: url("../fonts/SF-Pro-Text-Light.otf");
+}
+
+@font-face {
+    font-family: "SF-Pro-Display-Light";
+    src: url("../fonts/SF-Pro-Display-Light.otf");
+}
+
 body {
     color: #333333;
 }
@@ -47,11 +57,27 @@ a {
     color: #999999;
 }
 
-.content {
-    margin-top: -30px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.nav {
+    font-size: 20px;
+    font-family: "SF-Pro-Display-Light";
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.nav a {
+    font-family: "SF-Pro-Display-Semibold";
+}
+
+.navigation {
+    position: absolute;
+}
+
+.me {
+    padding-top: 120px;
+    width: 40%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .title {
@@ -94,3 +120,51 @@ a {
     -o-filter: opacity(0.5);
     filter: opacity(0.5);
 }
+
+#about {
+    background-color: #fafafa;
+    margin-top: 100px;
+    padding: 20px 0px 40px 0px;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "SF-Pro-Display-Semibold";
+}
+
+#about p {
+    font-size: 18px;
+    font-family: "SF-Pro-Text-Light";
+    line-height: 30px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-indent: 40px;
+}
+
+#skills {
+    background-color: #444;
+    color: white;
+    padding: 20px 0px 40px 0px;
+}
+
+#skills h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "SF-Pro-Display-Semibold";
+}
+
+#skills .skills {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#skills .skills img{
+    width: 20%;
+    padding: 20px;
+    cursor: pointer;
+}
+
