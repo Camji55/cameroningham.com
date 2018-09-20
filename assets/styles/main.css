@@ -148,11 +148,12 @@ a {
 
 #about p {
     font-size: 18px;
-    font-family: "SF-Pro-Text-Light";
+    font-family: "SF-Pro-Text-Regular";
     line-height: 30px;
     max-width: 500px;
     margin: 0 auto;
     text-indent: 40px;
+    color: #999999;
 }
 
 #skills {
@@ -218,6 +219,7 @@ a {
     font-size: 16px;
     font-family: "SF-Pro-Text-Regular";
     color: #999999;
+    line-height: 25px;
 }
 
 .project-images {
