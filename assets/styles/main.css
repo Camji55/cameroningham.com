@@ -19,17 +19,30 @@
 }
 
 @font-face {
+    font-family: "SF-Pro-Text-Regular";
+    src: url("../fonts/SF-Pro-Text-Regular.otf");
+}
+
+@font-face {
     font-family: "SF-Pro-Display-Light";
     src: url("../fonts/SF-Pro-Display-Light.otf");
 }
 
 body {
     color: #333333;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 140px auto;
+    grid-template-areas: 'navigation content'
 }
 
 a {
     color: #333333;
     text-decoration: none;
+}
+
+.content {
+    grid-area: content;
 }
 
 .logo {
@@ -69,15 +82,23 @@ a {
 }
 
 .navigation {
-    position: absolute;
+    position: fixed;
+    background-color: #F7F7F7;
+    padding: 0px 10px 0px 10px;
+    height: 100%;
+    grid-area: sidebar;
+    width: 140px;
 }
 
 .me {
     padding-top: 120px;
-    width: 40%;
-    max-width: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.me img {
     margin: 0 auto;
-    text-align: center;
 }
 
 .title {
@@ -124,7 +145,10 @@ a {
 #about {
     background-color: #fafafa;
     margin-top: 100px;
-    padding: 20px 0px 40px 0px;
+    padding: 70px 0px 90px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 #about h1 {
@@ -137,20 +161,23 @@ a {
     font-size: 18px;
     font-family: "SF-Pro-Text-Light";
     line-height: 30px;
-    width: 80%;
     max-width: 500px;
     margin: 0 auto;
     text-indent: 40px;
 }
 
 #skills {
-    background-color: #444;
-    color: white;
-    padding: 20px 0px 40px 0px;
+    background-color: #C9DCDA;
+    color: #758F8D;
+    padding: 70px 0px 90px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #skills h1 {
-    text-align: center;
     font-size: 30px;
     font-family: "SF-Pro-Display-Semibold";
 }
@@ -158,13 +185,57 @@ a {
 #skills .skills {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 150px);
+    grid-row-gap: 20px;
+}
+
+#skills .skills .skill p{
+    font-size: 16px;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+#projects {
+    background-color: #fafafa;
+    padding: 70px 0px 90px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h1 {
     text-align: center;
+    font-size: 30px;
+    font-family: "SF-Pro-Display-Semibold";
 }
 
-#skills .skills img{
-    width: 20%;
-    padding: 20px;
-    cursor: pointer;
+.project {
+    width: 80%;
+    margin: 0 auto;
 }
 
+.project:not(:last-child) {
+    margin-bottom: 75px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-family: "SF-Pro-Display-Semibold";
+}
+
+.project-description {
+    margin-top: -15px;
+    font-size: 16px;
+    font-family: "SF-Pro-Text-Regular";
+    color: #999999;
+}
+
+.project-images {
+    margin-top: 30px;
+}
+
+.project-image {
+    margin: 0;
+    padding: 0;
+}
