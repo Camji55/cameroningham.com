@@ -79,6 +79,25 @@ a {
 
 .nav a {
     font-family: "SF-Pro-Display-Semibold";
+    color: #333333;
+
+    -webkit-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -ms-transition: 0.15s color linear;
+    -o-transition: 0.15s color linear;
+    transition: 0.15s color linear, 0.15s color linear;
+}
+
+.nav a:hover {
+    color: #bbb;
+
+    -webkit-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -ms-transition: 0.15s color linear;
+    -o-transition: 0.15s color linear;
+    transition: 0.15s color linear, 0.15s color linear;
 }
 
 .navigation {
@@ -110,36 +129,6 @@ a {
 .title span {
     font-family: "SF-Pro-Display-Black";
     font-size: 50px;
-}
-
-.social-icons {
-    margin-top: -20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-icons img {
-    -webkit-transition: 0.15s -webkit-filter linear;
-    -moz-transition: 0.15s -moz-filter linear;
-    -moz-transition: 0.15s filter linear;
-    -ms-transition: 0.15s -ms-filter linear;
-    -o-transition: 0.15s -o-filter linear;
-    transition: 0.15s filter linear, 0.15s -webkit-filter linear;
-}
-
-.social-icons img:hover {
-    -webkit-transition: 0.15s -webkit-filter linear;
-    -moz-transition: 0.15s -moz-filter linear;
-    -moz-transition: 0.15s filter linear;
-    -ms-transition: 0.15s -ms-filter linear;
-    -o-transition: 0.15s -o-filter linear;
-    transition: 0.15s filter linear, 0.15s -webkit-filter linear;
-
-    -webkit-filter: opacity(0.5);
-    -moz-filter: opacity(0.5);
-    -ms-filter: opacity(0.5);
-    -o-filter: opacity(0.5);
-    filter: opacity(0.5);
 }
 
 #about {
@@ -238,4 +227,67 @@ a {
 .project-image {
     margin: 0;
     padding: 0;
+}
+
+#contact {
+    background-color: #C9DCDA;
+    color: #758F8D;
+    padding: 70px 0px 90px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "SF-Pro-Display-Semibold";
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 40px;
+    margin-left: 20px;
+}
+
+.social-icons img {
+    -webkit-transition: 0.15s -webkit-filter linear;
+    -moz-transition: 0.15s -moz-filter linear;
+    -moz-transition: 0.15s filter linear;
+    -ms-transition: 0.15s -ms-filter linear;
+    -o-transition: 0.15s -o-filter linear;
+    transition: 0.15s filter linear, 0.15s -webkit-filter linear;
+}
+
+.social-icons img:hover {
+    -webkit-transition: 0.15s -webkit-filter linear;
+    -moz-transition: 0.15s -moz-filter linear;
+    -moz-transition: 0.15s filter linear;
+    -ms-transition: 0.15s -ms-filter linear;
+    -o-transition: 0.15s -o-filter linear;
+    transition: 0.15s filter linear, 0.15s -webkit-filter linear;
+
+    -webkit-filter: opacity(0.5);
+    -moz-filter: opacity(0.5);
+    -ms-filter: opacity(0.5);
+    -o-filter: opacity(0.5);
+    filter: opacity(0.5);
+}
+
+#footer {
+    background-color: #F7F7F7;
+    padding: 2px 0px 2px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footer .copyright {
+    font-size: 14px;
+    font-family: "SF-Pro-Text-Regular";
+    color: #bbb;
 }
