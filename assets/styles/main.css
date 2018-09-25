@@ -214,6 +214,39 @@ a {
     font-family: "SF-Pro-Display-Semibold";
 }
 
+.project-links {
+    font-size: 14px;
+    font-family: "SF-Pro-Display-Black";
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
+
+.project-links a {
+    color: #333;
+
+    -webkit-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -ms-transition: 0.15s color linear;
+    -o-transition: 0.15s color linear;
+    transition: 0.15s color linear, 0.15s color linear;
+}
+
+.project-links a:hover {
+    color: #bbb;
+
+    -webkit-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -ms-transition: 0.15s color linear;
+    -o-transition: 0.15s color linear;
+    transition: 0.15s color linear, 0.15s color linear;
+}
+
+.project-links a:not(:last-child) {
+    padding-right: 10px;
+}
+
 .project-description {
     margin-top: -15px;
     font-size: 16px;
