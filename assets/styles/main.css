@@ -55,7 +55,7 @@ a {
 
     font-family: "MrDafoe";
     font-size: 50px;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 20px;
 }
 
@@ -73,7 +73,7 @@ a {
 .nav {
     font-size: 20px;
     font-family: "SF-Pro-Display-Light";
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: -20px;
 }
 
@@ -106,7 +106,7 @@ a {
     padding: 0px 10px 0px 10px;
     height: 100%;
     grid-area: sidebar;
-    width: 140px;
+    width: 200px;
 }
 
 .me {
@@ -157,38 +157,8 @@ a {
     color: #999999;
 }
 
-#skills {
-    background-color: #C9DCDA;
-    color: #758F8D;
-    padding: 70px 0px 90px 0px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
-#skills h1 {
-    font-size: 30px;
-    font-family: "SF-Pro-Display-Semibold";
-}
-
-#skills .skills {
-    width: 100%;
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(2, 150px);
-    grid-row-gap: 20px;
-}
-
-#skills .skills .skill p{
-    font-size: 16px;
-    font-family: "SF-Pro-Text-Regular";
-}
-
 #projects {
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding: 70px 0px 90px 0px;
     display: grid;
     justify-content: center;
@@ -268,7 +238,7 @@ a {
 #contact {
     background-color: #C9DCDA;
     color: #758F8D;
-    padding: 70px 0px 90px 0px;
+    padding: 70px 0px 40px 0px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -313,7 +283,7 @@ a {
 }
 
 #footer {
-    background-color: #F7F7F7;
+    background-color: #C9DCDA;
     padding: 2px 0px 2px 0px;
     display: grid;
     justify-content: center;
@@ -325,5 +295,5 @@ a {
 #footer .copyright {
     font-size: 14px;
     font-family: "SF-Pro-Text-Regular";
-    color: #bbb;
+    color: #758F8D;
 }
