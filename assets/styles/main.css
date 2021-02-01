@@ -1,299 +1,300 @@
 @font-face {
-    font-family: "MrDafoe";
-    src: url("../fonts/MrDafoe.ttf") format("truetype");
+  font-family: "MrDafoe";
+  src: url("../fonts/MrDafoe.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "SF-Pro-Display-Black";
-    src: url("../fonts/SF-Pro-Display-Black.otf");
+  font-family: "SF-Pro-Display-Black";
+  src: url("../fonts/SF-Pro-Display-Black.otf");
 }
 
 @font-face {
-    font-family: "SF-Pro-Display-Semibold";
-    src: url("../fonts/SF-Pro-Display-Semibold.otf");
+  font-family: "SF-Pro-Display-Semibold";
+  src: url("../fonts/SF-Pro-Display-Semibold.otf");
 }
 
 @font-face {
-    font-family: "SF-Pro-Text-Light";
-    src: url("../fonts/SF-Pro-Text-Light.otf");
+  font-family: "SF-Pro-Text-Light";
+  src: url("../fonts/SF-Pro-Text-Light.otf");
 }
 
 @font-face {
-    font-family: "SF-Pro-Text-Regular";
-    src: url("../fonts/SF-Pro-Text-Regular.otf");
+  font-family: "SF-Pro-Text-Regular";
+  src: url("../fonts/SF-Pro-Text-Regular.otf");
 }
 
 @font-face {
-    font-family: "SF-Pro-Display-Light";
-    src: url("../fonts/SF-Pro-Display-Light.otf");
+  font-family: "SF-Pro-Display-Light";
+  src: url("../fonts/SF-Pro-Display-Light.otf");
 }
 
 body {
-    color: #333333;
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: 140px auto;
-    grid-template-areas: 'navigation content'
+  color: red;
+  /* color: #333333; */
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 140px auto;
+  grid-template-areas: "navigation content";
 }
 
 a {
-    color: #333333;
-    text-decoration: none;
+  color: #333333;
+  text-decoration: none;
 }
 
 .content {
-    grid-area: content;
+  grid-area: content;
 }
 
 .logo {
-    -webkit-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -ms-transition: 0.15s color linear;
-    -o-transition: 0.15s color linear;
-    transition: 0.15s color linear;
+  -webkit-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -ms-transition: 0.15s color linear;
+  -o-transition: 0.15s color linear;
+  transition: 0.15s color linear;
 
-    font-family: "MrDafoe";
-    font-size: 50px;
-    margin-left: 50px;
-    margin-top: 20px;
+  font-family: "MrDafoe";
+  font-size: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .logo:hover {
-    -webkit-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -ms-transition: 0.15s color linear;
-    -o-transition: 0.15s color linear;
-    transition: 0.15s color linear;
+  -webkit-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -ms-transition: 0.15s color linear;
+  -o-transition: 0.15s color linear;
+  transition: 0.15s color linear;
 
-    color: #999999;
+  color: #999999;
 }
 
 .nav {
-    font-size: 20px;
-    font-family: "SF-Pro-Display-Light";
-    margin-left: 50px;
-    margin-top: -20px;
+  font-size: 20px;
+  font-family: "SF-Pro-Display-Light";
+  margin-left: 50px;
+  margin-top: -20px;
 }
 
 .nav a {
-    font-family: "SF-Pro-Display-Semibold";
-    color: #333333;
+  font-family: "SF-Pro-Display-Semibold";
+  color: #333333;
 
-    -webkit-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -ms-transition: 0.15s color linear;
-    -o-transition: 0.15s color linear;
-    transition: 0.15s color linear, 0.15s color linear;
+  -webkit-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -ms-transition: 0.15s color linear;
+  -o-transition: 0.15s color linear;
+  transition: 0.15s color linear, 0.15s color linear;
 }
 
 .nav a:hover {
-    color: #bbb;
+  color: #bbb;
 
-    -webkit-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -ms-transition: 0.15s color linear;
-    -o-transition: 0.15s color linear;
-    transition: 0.15s color linear, 0.15s color linear;
+  -webkit-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -ms-transition: 0.15s color linear;
+  -o-transition: 0.15s color linear;
+  transition: 0.15s color linear, 0.15s color linear;
 }
 
 .navigation {
-    position: fixed;
-    background-color: #F7F7F7;
-    padding: 0px 10px 0px 10px;
-    height: 100%;
-    grid-area: sidebar;
-    width: 200px;
+  position: fixed;
+  background-color: #f7f7f7;
+  padding: 0px 10px 0px 10px;
+  height: 100%;
+  grid-area: sidebar;
+  width: 200px;
 }
 
 .me {
-    padding-top: 120px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  padding-top: 120px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .me img {
-    margin: 0 auto;
-    border-radius: 250px;
+  margin: 0 auto;
+  border-radius: 250px;
 }
 
 .title {
-    font-family: "SF-Pro-Display-Semibold";
-    font-size: 50px;
-    margin-top: 0px;
+  font-family: "SF-Pro-Display-Semibold";
+  font-size: 50px;
+  margin-top: 0px;
 }
 
 .title span {
-    font-family: "SF-Pro-Display-Black";
-    font-size: 50px;
+  font-family: "SF-Pro-Display-Black";
+  font-size: 50px;
 }
 
 #about {
-    background-color: #fafafa;
-    margin-top: 100px;
-    padding: 70px 0px 90px 0px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  background-color: #fafafa;
+  margin-top: 100px;
+  padding: 70px 0px 90px 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 #about h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: "SF-Pro-Display-Semibold";
+  text-align: center;
+  font-size: 30px;
+  font-family: "SF-Pro-Display-Semibold";
 }
 
 #about p {
-    font-size: 18px;
-    font-family: "SF-Pro-Text-Regular";
-    line-height: 30px;
-    max-width: 500px;
-    margin: 0 auto;
-    text-indent: 40px;
-    color: #999999;
+  font-size: 18px;
+  font-family: "SF-Pro-Text-Regular";
+  line-height: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-indent: 40px;
+  color: #999999;
 }
 
 #projects {
-    background-color: #ffffff;
-    padding: 70px 0px 90px 0px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  background-color: #ffffff;
+  padding: 70px 0px 90px 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: "SF-Pro-Display-Semibold";
+  text-align: center;
+  font-size: 30px;
+  font-family: "SF-Pro-Display-Semibold";
 }
 
 .project {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .project:not(:last-child) {
-    margin-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .project-title {
-    font-size: 22px;
-    font-family: "SF-Pro-Display-Semibold";
+  font-size: 22px;
+  font-family: "SF-Pro-Display-Semibold";
 }
 
 .project-links {
-    font-size: 14px;
-    font-family: "SF-Pro-Display-Black";
-    padding-bottom: 10px;
-    margin-top: -10px;
+  font-size: 14px;
+  font-family: "SF-Pro-Display-Black";
+  padding-bottom: 10px;
+  margin-top: -10px;
 }
 
 .project-links a {
-    color: #333;
+  color: #333;
 
-    -webkit-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -ms-transition: 0.15s color linear;
-    -o-transition: 0.15s color linear;
-    transition: 0.15s color linear, 0.15s color linear;
+  -webkit-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -ms-transition: 0.15s color linear;
+  -o-transition: 0.15s color linear;
+  transition: 0.15s color linear, 0.15s color linear;
 }
 
 .project-links a:hover {
-    color: #bbb;
+  color: #bbb;
 
-    -webkit-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -moz-transition: 0.15s color linear;
-    -ms-transition: 0.15s color linear;
-    -o-transition: 0.15s color linear;
-    transition: 0.15s color linear, 0.15s color linear;
+  -webkit-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -moz-transition: 0.15s color linear;
+  -ms-transition: 0.15s color linear;
+  -o-transition: 0.15s color linear;
+  transition: 0.15s color linear, 0.15s color linear;
 }
 
 .project-links a:not(:last-child) {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .project-description {
-    margin-top: -15px;
-    font-size: 16px;
-    font-family: "SF-Pro-Text-Regular";
-    color: #999999;
-    line-height: 25px;
+  margin-top: -15px;
+  font-size: 16px;
+  font-family: "SF-Pro-Text-Regular";
+  color: #999999;
+  line-height: 25px;
 }
 
 .project-images {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .project-image {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #contact {
-    background-color: #C9DCDA;
-    color: #758F8D;
-    padding: 70px 0px 40px 0px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  background-color: #c9dcda;
+  color: #758f8d;
+  padding: 70px 0px 40px 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: "SF-Pro-Display-Semibold";
+  text-align: center;
+  font-size: 30px;
+  font-family: "SF-Pro-Display-Semibold";
 }
 
 .social-icons {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 40px;
-    margin-left: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 40px;
+  margin-left: 20px;
 }
 
 .social-icons img {
-    -webkit-transition: 0.15s -webkit-filter linear;
-    -moz-transition: 0.15s -moz-filter linear;
-    -moz-transition: 0.15s filter linear;
-    -ms-transition: 0.15s -ms-filter linear;
-    -o-transition: 0.15s -o-filter linear;
-    transition: 0.15s filter linear, 0.15s -webkit-filter linear;
+  -webkit-transition: 0.15s -webkit-filter linear;
+  -moz-transition: 0.15s -moz-filter linear;
+  -moz-transition: 0.15s filter linear;
+  -ms-transition: 0.15s -ms-filter linear;
+  -o-transition: 0.15s -o-filter linear;
+  transition: 0.15s filter linear, 0.15s -webkit-filter linear;
 }
 
 .social-icons img:hover {
-    -webkit-transition: 0.15s -webkit-filter linear;
-    -moz-transition: 0.15s -moz-filter linear;
-    -moz-transition: 0.15s filter linear;
-    -ms-transition: 0.15s -ms-filter linear;
-    -o-transition: 0.15s -o-filter linear;
-    transition: 0.15s filter linear, 0.15s -webkit-filter linear;
+  -webkit-transition: 0.15s -webkit-filter linear;
+  -moz-transition: 0.15s -moz-filter linear;
+  -moz-transition: 0.15s filter linear;
+  -ms-transition: 0.15s -ms-filter linear;
+  -o-transition: 0.15s -o-filter linear;
+  transition: 0.15s filter linear, 0.15s -webkit-filter linear;
 
-    -webkit-filter: opacity(0.5);
-    -moz-filter: opacity(0.5);
-    -ms-filter: opacity(0.5);
-    -o-filter: opacity(0.5);
-    filter: opacity(0.5);
+  -webkit-filter: opacity(0.5);
+  -moz-filter: opacity(0.5);
+  -ms-filter: opacity(0.5);
+  -o-filter: opacity(0.5);
+  filter: opacity(0.5);
 }
 
 #footer {
-    background-color: #C9DCDA;
-    padding: 2px 0px 2px 0px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
+  background-color: #c9dcda;
+  padding: 2px 0px 2px 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #footer .copyright {
-    font-size: 14px;
-    font-family: "SF-Pro-Text-Regular";
-    color: #758F8D;
+  font-size: 14px;
+  font-family: "SF-Pro-Text-Regular";
+  color: #758f8d;
 }
